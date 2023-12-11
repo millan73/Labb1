@@ -2,26 +2,36 @@ export const navItems = [
     {
         id: 0,
         typ: 'top',
-        namn: 'Bowling'
+        namn: 'Start',
+        route: '/'
     },
     {
         id: 1,
         typ: 'top',
-        namn: 'Biljard'
+        namn: 'Bowling',
+        route: '/bowling'
     },
     {
         id: 2,
         typ: 'top',
-        namn: 'Dart'
+        namn: 'Biljard',
+        route: '/biljard'
     },
     {
         id: 3,
+        typ: 'top',
+        namn: 'Dart',
+        route: '/dart'
+    },
+    {
+        id: 4,
         typ: 'left',
         namn: 'Kalle'
     },
     {
-        id: 4,
+        id: 5,
         typ: 'top',
-        namn: 'Kontakt'
+        namn: 'Kontakt',
+        route: '/contact'
     }
 ]
