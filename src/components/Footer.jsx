@@ -1,4 +1,4 @@
-/* eslint-disable react/prop-types */
+import PropTypes from 'prop-types'
 
 function Footer({ className }) {
     return (
@@ -14,6 +14,10 @@ function Footer({ className }) {
 
 Footer.defaultProps = {
     className: 'row'
+}
+
+Footer.propTypes = {
+    className: PropTypes.string
 }
 
 export default Footer

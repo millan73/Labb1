@@ -1,4 +1,4 @@
-/* eslint-disable react/prop-types */
+import PropTypes from 'prop-types'
 import { navItems } from '../data/navItems'
 import { NavLink, Route, Routes } from 'react-router-dom'
 import Start from '../pages/Start'
@@ -49,4 +49,9 @@ function TopNavigation() {
         </>
     )
 }
+
+TopNavigation.propTypes = {
+    items: PropTypes.string
+}
+
 export default TopNavigation

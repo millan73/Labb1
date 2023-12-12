@@ -1,4 +1,4 @@
-/* eslint-disable react/prop-types */
+import PropTypes from 'prop-types'
 
 function Header({ companyName }) {
     return (
@@ -6,5 +6,9 @@ function Header({ companyName }) {
             <h1>{companyName}</h1>
         </header>
     )
+}
+
+Header.propTypes = {
+    companyName: PropTypes.string
 }
 export default Header

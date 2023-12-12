@@ -1,4 +1,4 @@
-/* eslint-disable react/prop-types */
+import PropTypes from 'prop-types'
 import { navItems } from '../data/navItems'
 
 function LeftNavigation() {
@@ -22,4 +22,9 @@ function LeftNavigation() {
         </nav>
     )
 }
+
+LeftNavigation.propTypes = {
+    items: PropTypes.string
+}
+
 export default LeftNavigation
