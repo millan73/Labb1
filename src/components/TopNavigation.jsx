@@ -5,8 +5,8 @@ import Start from '../pages/Start'
 import Bowling from '../pages/Bowling'
 import Biljard from '../pages/Biljard'
 import Dart from '../pages/Dart'
-import Contact from '../pages/Contact'
 import NotFound from '../pages/NotFound'
+import Contact from '../pages/contact'
 
 function TopNavigation() {
     let topNavItem = []

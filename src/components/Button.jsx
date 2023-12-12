@@ -1,24 +1,16 @@
 /* eslint-disable react/prop-types */
-import { useState } from 'react'
 
-function Button({ className }) {
-    const [text, setText] = useState('Kllicka på mig')
-    const [style, setStyle] = useState(className)
-
-    const handleClick = () => {
-        setText('Du klickade på mig')
-        setStyle('btn btn-light')
-    }
-
+function Button({ className, text, onClick }) {
     return (
-        <button onClick={handleClick} className={style}>
+        <button onClick={onClick} className={className}>
             {text}
         </button>
     )
 }
 
 Button.defaultProps = {
-    className: 'btn btn-primary'
+    className: 'btn btn-primary',
+    text: 'Du behöver ange en text'
 }
 
 export default Button

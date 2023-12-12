@@ -26,12 +26,27 @@ export const navItems = [
     {
         id: 4,
         typ: 'left',
-        namn: 'Kalle'
+        namn: 'Öppettider'
     },
     {
         id: 5,
         typ: 'top',
         namn: 'Kontakt',
         route: '/contact'
+    },
+    {
+        id: 6,
+        typ: 'left',
+        namn: 'Priser'
+    },
+    {
+        id: 7,
+        typ: 'left',
+        namn: 'Tävlingar'
+    },
+    {
+        id: 8,
+        typ: 'left',
+        namn: 'Scoring online'
     }
 ]

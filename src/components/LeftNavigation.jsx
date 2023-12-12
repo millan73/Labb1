@@ -2,18 +2,18 @@
 import { navItems } from '../data/navItems'
 
 function LeftNavigation() {
-    let topNavItem = []
+    let leftNavItem = []
 
     navItems.forEach((item) => {
         if (item.typ === 'left') {
-            topNavItem.push(item)
+            leftNavItem.push(item)
         }
     })
 
     return (
         <nav>
-            <ul className="list-group col-3">
-                {topNavItem.map((items) => (
+            <ul className="list-group">
+                {leftNavItem.map((items) => (
                     <li key={items.id} className="list-group-item">
                         <a href="#">{items.namn}</a>
                     </li>
